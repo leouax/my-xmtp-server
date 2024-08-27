@@ -238,7 +238,7 @@ async function getMessagesByUrl(url) {
 
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow only your frontend URL
+  origin: '*', // Allow all URLs
   methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allow specific HTTP methods
   allowedHeaders: 'Content-Type,Authorization' // Allow specific headers
 }));
